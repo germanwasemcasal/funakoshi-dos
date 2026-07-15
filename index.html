@@ -48,6 +48,94 @@
       -webkit-font-smoothing: antialiased;
     }
 
+    :focus-visible {
+      outline: 3px solid #B91C1C;
+      outline-offset: 4px;
+    }
+
+    .site-grain {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 80;
+      opacity: .08;
+      mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+    }
+
+    .ink-brush {
+      position: absolute;
+      inset: auto -10vw -18vh auto;
+      width: min(72vw, 860px);
+      aspect-ratio: 1;
+      border-radius: 38% 62% 52% 48%;
+      background: radial-gradient(circle at 32% 36%, rgba(185, 28, 28, .92), rgba(185, 28, 28, .48) 30%, rgba(10, 10, 10, .62) 58%, transparent 72%);
+      filter: blur(18px);
+      opacity: .82;
+      transform: rotate(-17deg);
+    }
+
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(10,10,10,.86) 0%, rgba(10,10,10,.38) 58%, rgba(10,10,10,.76) 100%), radial-gradient(circle at 72% 28%, rgba(185,28,28,.28), transparent 34%);
+      z-index: 0;
+    }
+
+    .vertical-dojo-code {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      letter-spacing: .45em;
+    }
+
+    .belt-panel {
+      background: linear-gradient(135deg, rgba(255,255,255,.14), rgba(255,255,255,.04));
+      border: 1px solid rgba(255,255,255,.18);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.14), 0 24px 80px rgba(0,0,0,.24);
+      backdrop-filter: blur(16px);
+    }
+
+    .dojo-ribbon {
+      border-block: 1px solid rgba(255,255,255,.12);
+      background: #0A0A0A;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .dojo-ribbon-track {
+      display: inline-flex;
+      gap: 2rem;
+      min-width: 200%;
+      animation: ribbonMove 32s linear infinite;
+    }
+
+    @keyframes ribbonMove {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .discipline-card {
+      border: 1px solid rgba(0,0,0,.08);
+      background: linear-gradient(180deg, #fff 0%, #f7f3ee 100%);
+      box-shadow: 0 20px 60px -35px rgba(10,10,10,.35);
+      transition: transform .35s ease, box-shadow .35s ease;
+    }
+
+    .discipline-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 30px 80px -35px rgba(10,10,10,.45);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+
     .font-serif {
       font-family: 'Playfair Display', serif;
     }
@@ -364,6 +452,7 @@
 </head>
 
 <body class="bg-paper text-sumi">
+  <div class="site-grain" aria-hidden="true"></div>
 
   <!-- NAV -->
   <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
@@ -447,8 +536,11 @@
   </div>
 
   <!-- HERO -->
-  <section id="inicio" class="hero-bg relative min-h-screen flex items-center text-white">
+  <section id="inicio" class="hero-bg relative min-h-screen flex items-center text-white overflow-hidden">
+    <div class="ink-brush" aria-hidden="true"></div>
+    <div class="absolute right-6 top-28 hidden xl:block vertical-dojo-code text-white/35 text-xs uppercase" aria-hidden="true">REI · KIHON · KATA · KUMITE</div>
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-32 w-full relative z-10">
+      <div class="grid lg:grid-cols-[minmax(0,1fr)_360px] gap-12 items-end">
       <div class="max-w-3xl">
         <div class="section-label text-crimson-50 mb-6 fade-in">Karate-Do Shotokan · ISKA</div>
         <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-[0.95] font-medium mb-8 fade-in"
@@ -485,6 +577,15 @@
           Contactanos por WhatsApp
         </a>
       </div>
+      <aside class="belt-panel rounded-[2rem] p-6 hidden lg:block fade-in" style="animation-delay:.45s">
+        <div class="text-xs tracking-[.25em] uppercase text-white/55 mb-5">Código del tatami</div>
+        <div class="space-y-4">
+          <div class="flex items-center justify-between border-b border-white/10 pb-3"><span class="font-serif text-3xl text-crimson">礼</span><span class="text-sm text-white/80">Respeto antes que fuerza</span></div>
+          <div class="flex items-center justify-between border-b border-white/10 pb-3"><span class="font-serif text-3xl text-crimson">技</span><span class="text-sm text-white/80">Técnica con propósito</span></div>
+          <div class="flex items-center justify-between"><span class="font-serif text-3xl text-crimson">心</span><span class="text-sm text-white/80">Carácter bajo presión</span></div>
+        </div>
+      </aside>
+      </div>
     </div>
 
     <!-- Scroll indicator -->
@@ -496,8 +597,8 @@
   </section>
 
   <!-- STATS BAR -->
-  <section class="bg-ink text-white py-10 border-b border-white/10">
-    <div class="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-2 md:grid-cols-4 gap-8">
+  <section class="dojo-ribbon text-white py-5">
+    <div class="dojo-ribbon-track px-6 lg:px-10">
       <div class="text-center md:text-left">
         <div class="font-serif text-4xl md:text-5xl text-crimson counter" data-target="15">0</div>
         <div class="text-white/60 text-sm mt-1 tracking-wide">Años de trayectoria</div>
@@ -512,6 +613,22 @@
       </div>
       <div class="text-center md:text-left">
         <div class="font-serif text-4xl md:text-5xl text-crimson counter" data-target="30">0</div>
+        <div class="text-white/60 text-sm mt-1 tracking-wide">Campeones formados</div>
+      </div>
+      <div class="text-center md:text-left">
+        <div class="font-serif text-4xl md:text-5xl text-crimson counter" aria-hidden="true" data-target="15">0</div>
+        <div class="text-white/60 text-sm mt-1 tracking-wide">Años de trayectoria</div>
+      </div>
+      <div class="text-center md:text-left">
+        <div class="font-serif text-4xl md:text-5xl text-crimson counter" aria-hidden="true" data-target="200">0</div>
+        <div class="text-white/60 text-sm mt-1 tracking-wide">Medallas ganadas</div>
+      </div>
+      <div class="text-center md:text-left">
+        <div class="font-serif text-4xl md:text-5xl text-crimson counter" aria-hidden="true" data-target="50">0</div>
+        <div class="text-white/60 text-sm mt-1 tracking-wide">Torneos disputados</div>
+      </div>
+      <div class="text-center md:text-left">
+        <div class="font-serif text-4xl md:text-5xl text-crimson counter" aria-hidden="true" data-target="30">0</div>
         <div class="text-white/60 text-sm mt-1 tracking-wide">Campeones formados</div>
       </div>
     </div>
@@ -1229,32 +1346,34 @@
 
         <!-- Formulario -->
         <div class="reveal reveal-delay-2">
-          <form id="contactForm" class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl">
+          <form id="contactForm" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl">
+            <input type="hidden" name="form-name" value="contacto" />
+            <p class="hidden"><label>No completar: <input name="bot-field" /></label></p>
             <h3 class="font-serif text-2xl mb-6">Escribinos</h3>
             <div class="space-y-5">
               <div>
                 <label class="block text-sm font-medium mb-2">Nombre</label>
-                <input type="text" required
+                <input type="text" name="nombre" required
                   class="form-input w-full px-4 py-3 rounded-xl border border-black/10 bg-paper transition-all"
                   placeholder="Tu nombre" />
               </div>
               <div class="grid grid-cols-2 gap-4">
                 <div>
                   <label class="block text-sm font-medium mb-2">Email</label>
-                  <input type="email" required
+                  <input type="email" name="email" required
                     class="form-input w-full px-4 py-3 rounded-xl border border-black/10 bg-paper transition-all"
                     placeholder="tu@email.com" />
                 </div>
                 <div>
                   <label class="block text-sm font-medium mb-2">Teléfono</label>
-                  <input type="tel"
+                  <input type="tel" name="telefono"
                     class="form-input w-full px-4 py-3 rounded-xl border border-black/10 bg-paper transition-all"
                     placeholder="+54 9 11..." />
                 </div>
               </div>
               <div>
                 <label class="block text-sm font-medium mb-2">¿Para quién es la clase?</label>
-                <select class="form-input w-full px-4 py-3 rounded-xl border border-black/10 bg-paper transition-all">
+                <select name="tipo_clase" class="form-input w-full px-4 py-3 rounded-xl border border-black/10 bg-paper transition-all">
                   <option>Niño (5-12 años)</option>
                   <option>Adolescente (13-17)</option>
                   <option>Adulto (18+)</option>
@@ -1263,7 +1382,7 @@
               </div>
               <div>
                 <label class="block text-sm font-medium mb-2">Mensaje</label>
-                <textarea rows="4"
+                <textarea name="mensaje" rows="4"
                   class="form-input w-full px-4 py-3 rounded-xl border border-black/10 bg-paper transition-all resize-none"
                   placeholder="Contanos un poco sobre vos..."></textarea>
               </div>
