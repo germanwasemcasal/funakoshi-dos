@@ -1,0 +1,6 @@
+# Carpetas de herramientas locales — no subir a GitHub
+.agent/
+.agents/
+.netlify/
+.vscode/
+.gemini/

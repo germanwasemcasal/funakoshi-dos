@@ -6,7 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Funakoshi Dojo · Karate-Do Shotokan · Pinamar Norte</title>
   <meta name="description"
-    content="Dojo de barrio en Pinamar Norte. Karate-Do Shotokan afiliado a ISKA. Clases para niños, adolescentes y adultos. Más que un deporte, una forma de vida." />
+    content="Funakoshi Dojo en Pinamar Norte. Karate-Do Shotokan afiliado a ISKA, clases grupales mixtas y clases particulares a domicilio (a coordinar con practicantes de grado instructor, 2º kyu en adelante) en Pinamar y zona." />
+
+  <!-- Open Graph / WhatsApp / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Funakoshi Dojo · Karate-Do Shotokan · Pinamar Norte" />
+  <meta property="og:description"
+    content="Funakoshi Dojo en Pinamar Norte. Karate-Do Shotokan afiliado a ISKA, clases grupales mixtas y clases particulares a domicilio (a coordinar con practicantes de grado instructor, 2º kyu en adelante) en Pinamar y zona." />
+  <meta property="og:image" content="media/img/clases/clases_001.jpg" />
+  <meta property="og:locale" content="es_AR" />
+
+  <!-- Schema.org JSON-LD Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Funakoshi Dojo",
+    "description": "Funakoshi Dojo en Pinamar Norte. Karate-Do Shotokan afiliado a ISKA, clases grupales mixtas y clases particulares a domicilio (a coordinar con practicantes con grado de instructor, 2º kyu en adelante).",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle 60 esq. 50",
+      "addressLocality": "Pinamar Norte",
+      "addressRegion": "Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -34.76478620796938,
+      "longitude": -55.860825295585684
+    },
+    "telephone": "+5491100000000",
+    "priceRange": "$$"
+  }
+  </script>
+
   <link rel="preconnect" href="https://cdn.jsdelivr.net" />
   <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.1.0/index.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/@fontsource/playfair-display@5.1.0/index.css" rel="stylesheet" />
@@ -36,419 +69,7 @@
       }
     }
   </script>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #FAFAF8;
-      color: #1A1A1A;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    :focus-visible {
-      outline: 3px solid #B91C1C;
-      outline-offset: 4px;
-    }
-
-    .site-grain {
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      z-index: 80;
-      opacity: .08;
-      mix-blend-mode: multiply;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
-    }
-
-    .ink-brush {
-      position: absolute;
-      inset: auto -10vw -18vh auto;
-      width: min(72vw, 860px);
-      aspect-ratio: 1;
-      border-radius: 38% 62% 52% 48%;
-      background: radial-gradient(circle at 32% 36%, rgba(185, 28, 28, .92), rgba(185, 28, 28, .48) 30%, rgba(10, 10, 10, .62) 58%, transparent 72%);
-      filter: blur(18px);
-      opacity: .82;
-      transform: rotate(-17deg);
-    }
-
-    .hero-bg::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(90deg, rgba(10,10,10,.86) 0%, rgba(10,10,10,.38) 58%, rgba(10,10,10,.76) 100%), radial-gradient(circle at 72% 28%, rgba(185,28,28,.28), transparent 34%);
-      z-index: 0;
-    }
-
-    .vertical-dojo-code {
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
-      letter-spacing: .45em;
-    }
-
-    .belt-panel {
-      background: linear-gradient(135deg, rgba(255,255,255,.14), rgba(255,255,255,.04));
-      border: 1px solid rgba(255,255,255,.18);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,.14), 0 24px 80px rgba(0,0,0,.24);
-      backdrop-filter: blur(16px);
-    }
-
-    .dojo-ribbon {
-      border-block: 1px solid rgba(255,255,255,.12);
-      background: #0A0A0A;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-
-    .dojo-ribbon-track {
-      display: inline-flex;
-      gap: 2rem;
-      min-width: 200%;
-      animation: ribbonMove 32s linear infinite;
-    }
-
-    @keyframes ribbonMove {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
-    }
-
-    .discipline-card {
-      border: 1px solid rgba(0,0,0,.08);
-      background: linear-gradient(180deg, #fff 0%, #f7f3ee 100%);
-      box-shadow: 0 20px 60px -35px rgba(10,10,10,.35);
-      transition: transform .35s ease, box-shadow .35s ease;
-    }
-
-    .discipline-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 30px 80px -35px rgba(10,10,10,.45);
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: .01ms !important;
-      }
-    }
-
-    .font-serif {
-      font-family: 'Playfair Display', serif;
-    }
-
-    /* Reveal on scroll */
-    .reveal {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity .9s ease, transform .9s ease;
-    }
-
-    .reveal.in {
-      opacity: 1;
-      transform: none;
-    }
-
-    .reveal-delay-1 {
-      transition-delay: .12s;
-    }
-
-    .reveal-delay-2 {
-      transition-delay: .24s;
-    }
-
-    .reveal-delay-3 {
-      transition-delay: .36s;
-    }
-
-    /* Hero parallax */
-    .hero-bg {
-      background-image: linear-gradient(180deg, rgba(10, 10, 10, .55) 0%, rgba(10, 10, 10, .35) 40%, rgba(10, 10, 10, .75) 100%),
-        url('assets/images/image-1.jpeg');
-      background-size: cover;
-      background-position: center;
-    }
-
-    /* Kanji watermark */
-    .kanji-watermark::before {
-      content: '空手道';
-      position: absolute;
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(200px, 32vw, 420px);
-      color: rgba(0, 0, 0, .035);
-      line-height: 1;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      pointer-events: none;
-      z-index: 0;
-      letter-spacing: .05em;
-    }
-
-    /* Red underline accent */
-    .accent-line {
-      position: relative;
-      display: inline-block;
-    }
-
-    .accent-line::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -8px;
-      width: 48px;
-      height: 3px;
-      background: #B91C1C;
-    }
-
-    /* Buttons */
-    .btn-primary {
-      background: #B91C1C;
-      color: #fff;
-      transition: all .25s ease;
-      box-shadow: 0 10px 30px -10px rgba(185, 28, 28, .5);
-    }
-
-    .btn-primary:hover {
-      background: #991B1B;
-      transform: translateY(-2px);
-      box-shadow: 0 16px 40px -10px rgba(185, 28, 28, .6);
-    }
-
-    .btn-ghost {
-      background: transparent;
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, .5);
-      transition: all .25s ease;
-    }
-
-    .btn-ghost:hover {
-      background: #fff;
-      color: #0A0A0A;
-      border-color: #fff;
-    }
-
-    .btn-dark {
-      background: #0A0A0A;
-      color: #fff;
-      transition: all .25s ease;
-    }
-
-    .btn-dark:hover {
-      background: #B91C1C;
-    }
-
-    /* Nav */
-    .nav-scrolled {
-      background: rgba(250, 250, 248, .92);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      box-shadow: 0 1px 0 rgba(0, 0, 0, .06);
-    }
-
-    .nav-scrolled .nav-link {
-      color: #1A1A1A;
-    }
-
-    .nav-scrolled .nav-link:hover,
-    .nav-scrolled .nav-link.active {
-      color: #B91C1C;
-    }
-
-    .nav-scrolled .logo-text {
-      color: #0A0A0A;
-    }
-
-    /* Card hover */
-    .team-card {
-      transition: transform .4s ease, box-shadow .4s ease;
-    }
-
-    .team-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 30px 60px -20px rgba(0, 0, 0, .18);
-    }
-
-    .team-card .team-img {
-      transition: transform .6s ease;
-    }
-
-    .team-card:hover .team-img {
-      transform: scale(1.06);
-    }
-
-    /* Gallery */
-    .gallery-item {
-      overflow: hidden;
-      position: relative;
-    }
-
-    .gallery-item img {
-      transition: transform .8s ease;
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.08);
-    }
-
-    .gallery-item .overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, .75) 100%);
-      opacity: 0;
-      transition: opacity .4s ease;
-      display: flex;
-      align-items: flex-end;
-      padding: 20px;
-    }
-
-    .gallery-item:hover .overlay {
-      opacity: 1;
-    }
-
-    /* Timeline */
-    .timeline-item {
-      position: relative;
-      padding-left: 32px;
-    }
-
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      left: 7px;
-      top: 8px;
-      bottom: 0;
-      width: 1px;
-      background: #E5E5E5;
-    }
-
-    .timeline-item:last-child::before {
-      display: none;
-    }
-
-    .timeline-dot {
-      position: absolute;
-      left: 0;
-      top: 4px;
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      background: #fff;
-      border: 3px solid #B91C1C;
-    }
-
-    /* Filter button */
-    .filter-btn.active {
-      background: #0A0A0A;
-      color: #fff;
-    }
-
-    /* Mobile menu */
-    .mobile-menu {
-      transform: translateX(100%);
-      transition: transform .4s cubic-bezier(.4, 0, .2, 1);
-    }
-
-    .mobile-menu.open {
-      transform: none;
-    }
-
-    /* Counter */
-    .counter {
-      font-variant-numeric: tabular-nums;
-    }
-
-    /* Scrollbar */
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: #FAFAF8;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: #0A0A0A;
-      border-radius: 10px;
-    }
-
-    /* Marquee subtle */
-    @keyframes slowFade {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-
-      to {
-        opacity: 1;
-        transform: none;
-      }
-    }
-
-    .fade-in {
-      animation: slowFade .8s ease both;
-    }
-
-    /* Floating WhatsApp */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      z-index: 60;
-      background: #25D366;
-      color: #fff;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 10px 30px rgba(37, 211, 102, .5);
-      transition: transform .3s ease;
-    }
-
-    .whatsapp-float:hover {
-      transform: scale(1.1);
-    }
-
-    /* Input focus */
-    .form-input:focus {
-      outline: none;
-      border-color: #B91C1C;
-      box-shadow: 0 0 0 3px rgba(185, 28, 28, .15);
-    }
-
-    /* Section label */
-    .section-label {
-      font-size: 11px;
-      letter-spacing: .25em;
-      text-transform: uppercase;
-      color: #B91C1C;
-      font-weight: 600;
-    }
-
-    /* Benefit icon */
-    .benefit-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background: #FEF2F2;
-      color: #B91C1C;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all .3s ease;
-    }
-
-    .benefit-card:hover .benefit-icon {
-      background: #B91C1C;
-      color: #fff;
-      transform: rotate(-8deg) scale(1.05);
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
 <body class="bg-paper text-sumi">
@@ -469,15 +90,57 @@
         </div>
       </a>
 
-      <nav class="hidden lg:flex items-center gap-8">
-        <a href="#inicio" class="nav-link text-white text-sm font-medium hover:text-crimson transition-colors active">Inicio</a>
-        <a href="#dojo" class="nav-link text-white text-sm font-medium hover:text-crimson transition-colors">El Dojo</a>
-        <a href="#instructor" class="nav-link text-white text-sm font-medium hover:text-crimson transition-colors">Instructor</a>
-        <a href="#logros" class="nav-link text-white text-sm font-medium hover:text-crimson transition-colors">Competencias y Logros</a>
-        <a href="#eventos" class="nav-link text-white text-sm font-medium hover:text-crimson transition-colors">Eventos y Calendario</a>
-        <a href="#alumnos" class="nav-link text-white text-sm font-medium hover:text-crimson transition-colors">Alumnos</a>
-        <a href="#documentacion" class="nav-link text-white text-sm font-medium hover:text-crimson transition-colors">Documentación</a>
-        <a href="#contacto" class="nav-link text-white text-sm font-medium hover:text-crimson transition-colors">Contacto</a>
+      <nav class="hidden lg:flex items-center gap-4 xl:gap-6" aria-label="Navegación principal">
+        <a href="#inicio"
+          class="nav-link text-white text-sm font-medium hover:text-crimson transition-colors active">Inicio</a>
+
+        <div class="nav-dropdown">
+          <button type="button"
+            class="nav-dropdown-toggle nav-link text-white text-sm font-medium hover:text-crimson transition-colors"
+            aria-haspopup="true" aria-expanded="false">
+            <span>El Dojo</span>
+            <span class="nav-caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-submenu">
+            <a href="#dojo">Nuestra historia</a>
+            <a href="#por-que">¿Por qué este dojo?</a>
+            <a href="#instructor">Instructor</a>
+            <!-- <a href="#equipo">Nuestro equipo</a> -->
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <button type="button"
+            class="nav-dropdown-toggle nav-link text-white text-sm font-medium hover:text-crimson transition-colors"
+            aria-haspopup="true" aria-expanded="false">
+            <span>Actividades</span>
+            <span class="nav-caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-submenu">
+            <a href="#clases">Clases y Horarios</a>
+            <a href="#competicion">Competición</a>
+            <a href="#logros">Competencias y Logros</a>
+            <a href="#eventos">Eventos y Calendario</a>
+            <a href="#galeria">Galería de fotos</a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <button type="button"
+            class="nav-dropdown-toggle nav-link text-white text-sm font-medium hover:text-crimson transition-colors"
+            aria-haspopup="true" aria-expanded="false">
+            <span>Comunidad</span>
+            <span class="nav-caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-submenu">
+            <!-- <a href="#alumnos">Alumnos</a> -->
+            <a href="#documentacion">Documentación</a>
+            <a href="#faq">Preguntas frecuentes</a>
+          </div>
+        </div>
+
+        <a href="#contacto"
+          class="nav-link text-white text-sm font-medium hover:text-crimson transition-colors">Contacto</a>
       </nav>
 
       <div class="hidden lg:flex items-center gap-3">
@@ -491,7 +154,7 @@
         </a>
       </div>
 
-      <button id="menuBtn" class="lg:hidden text-white p-2" aria-label="Menú">
+      <button id="menuBtn" class="lg:hidden text-white p-2" aria-label="Abrir Menú de navegación" aria-expanded="false">
         <svg id="menuIcon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
           stroke-linecap="round">
           <path d="M3 6h18M3 12h18M3 18h18" />
@@ -501,7 +164,7 @@
   </header>
 
   <!-- Mobile menu -->
-  <div id="mobileMenu" class="mobile-menu fixed inset-0 z-50 bg-ink text-white">
+  <div id="mobileMenu" class="mobile-menu fixed inset-0 z-50 bg-ink text-white" aria-hidden="true">
     <div class="flex items-center justify-between h-20 px-6">
       <div class="flex items-center gap-3">
         <div
@@ -509,76 +172,118 @@
           武</div>
         <div class="text-white font-semibold">FUNAKOSHI DOJO</div>
       </div>
-      <button id="closeMenu" class="p-2">
+      <button id="closeMenu" class="p-2" aria-label="Cerrar Menú">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
           stroke-linecap="round">
           <path d="M18 6L6 18M6 6l12 12" />
         </svg>
       </button>
     </div>
-    <nav class="px-6 py-8 flex flex-col gap-6 text-2xl font-serif">
+    <nav class="px-6 py-8 flex flex-col gap-5 text-2xl font-serif">
       <a href="#inicio" class="mob-link">Inicio</a>
-      <a href="#dojo" class="mob-link">El Dojo</a>
-      <a href="#instructor" class="mob-link">Instructor</a>
-      <a href="#logros" class="mob-link">Competencias y Logros</a>
-      <a href="#eventos" class="mob-link">Eventos y Calendario</a>
-      <a href="#alumnos" class="mob-link">Alumnos</a>
-      <a href="#documentacion" class="mob-link">Documentación</a>
+
+      <div class="mob-dropdown-item">
+        <button type="button" class="mob-dropdown-toggle" aria-expanded="false">
+          <span>El Dojo</span>
+          <span class="text-base">▾</span>
+        </button>
+        <div class="mobile-submenu">
+          <a href="#dojo" class="mob-link text-base font-sans">Nuestra historia</a>
+          <a href="#por-que" class="mob-link text-base font-sans">¿Por qué este dojo?</a>
+          <a href="#instructor" class="mob-link text-base font-sans">Instructor</a>
+          <!-- <a href="#equipo" class="mob-link text-base font-sans">Nuestro equipo</a> -->
+        </div>
+      </div>
+
+      <div class="mob-dropdown-item">
+        <button type="button" class="mob-dropdown-toggle" aria-expanded="false">
+          <span>Actividades</span>
+          <span class="text-base">▾</span>
+        </button>
+        <div class="mobile-submenu">
+          <a href="#clases" class="mob-link text-base font-sans">Clases y Horarios</a>
+          <a href="#competicion" class="mob-link text-base font-sans">Competición</a>
+          <a href="#logros" class="mob-link text-base font-sans">Competencias y Logros</a>
+          <a href="#eventos" class="mob-link text-base font-sans">Eventos y Calendario</a>
+          <a href="#galeria" class="mob-link text-base font-sans">Galería de fotos</a>
+        </div>
+      </div>
+
+      <div class="mob-dropdown-item">
+        <button type="button" class="mob-dropdown-toggle" aria-expanded="false">
+          <span>Comunidad</span>
+          <span class="text-base">▾</span>
+        </button>
+        <div class="mobile-submenu">
+          <!-- <a href="#alumnos" class="mob-link text-base font-sans">Alumnos</a> -->
+          <a href="#documentacion" class="mob-link text-base font-sans">Documentación</a>
+          <a href="#faq" class="mob-link text-base font-sans">Preguntas frecuentes</a>
+        </div>
+      </div>
+
       <a href="#contacto" class="mob-link">Contacto</a>
-      <a href="#contacto" class="btn-primary mt-4 px-6 py-3 rounded-full text-center text-base font-sans font-semibold">Clase de prueba</a>
+      <a href="#contacto"
+        class="btn-primary mt-4 px-6 py-3 rounded-full text-center text-base font-sans font-semibold">Clase de
+        prueba</a>
     </nav>
   </div>
 
   <!-- HERO -->
   <section id="inicio" class="hero-bg relative min-h-screen flex items-center text-white overflow-hidden">
     <div class="ink-brush" aria-hidden="true"></div>
-    <div class="absolute right-6 top-28 hidden xl:block vertical-dojo-code text-white/35 text-xs uppercase" aria-hidden="true">REI · KIHON · KATA · KUMITE</div>
+    <div class="absolute right-6 top-28 hidden xl:block vertical-dojo-code text-white/35 text-xs uppercase"
+      aria-hidden="true">REI · KIHON · KATA · KUMITE</div>
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-32 w-full relative z-10">
       <div class="grid lg:grid-cols-[minmax(0,1fr)_360px] gap-12 items-end">
-      <div class="max-w-3xl">
-        <div class="section-label text-crimson-50 mb-6 fade-in">Karate-Do Shotokan · ISKA</div>
-        <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-[0.95] font-medium mb-8 fade-in"
-          style="animation-delay:.1s">
-          Más que un deporte,<br />
-          una forma de <span class="text-crimson italic">vida</span>.
-        </h1>
-        <p class="text-lg md:text-xl text-white/80 max-w-xl mb-10 leading-relaxed fade-in" style="animation-delay:.2s">
-          En nuestro dojo acompañamos el crecimiento técnico y humano: disciplina, respeto y perseverancia. Un lugar de barrio que se convirtió en una gran familia y en una escuela de vida.
-        </p>
-        <div class="flex flex-wrap gap-4 mb-10 fade-in" style="animation-delay:.3s">
-          <a href="#contacto" class="btn-primary px-7 py-4 rounded-full font-semibold inline-flex items-center gap-3">
-            Comenzar hoy
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14M13 5l7 7-7 7" />
+        <div class="max-w-3xl">
+          <div class="section-label text-crimson-50 mb-6 fade-in">Karate-Do Shotokan · ISKA</div>
+          <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-[0.95] font-medium mb-8 fade-in"
+            style="animation-delay:.1s">
+            Karate-Do Shotokan<br />
+            en <span class="text-crimson italic">Pinamar Norte</span>.
+          </h1>
+          <p class="text-lg md:text-xl text-white/80 max-w-xl mb-10 leading-relaxed fade-in"
+            style="animation-delay:.2s">
+            Entrená en Funakoshi Dojo con el Sensei Marcelo Auditore. Clases grupales mixtas los lunes, miércoles y
+            viernes, y clases particulares a domicilio en Pinamar y zona (a coordinar con un practicante con grado de
+            instructor, 2º kyu en adelante).
+          </p>
+          <div class="flex flex-wrap gap-4 mb-10 fade-in" style="animation-delay:.3s">
+            <a href="#contacto" class="btn-primary px-7 py-4 rounded-full font-semibold inline-flex items-center gap-3">
+              Comenzar hoy
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#clases" class="btn-ghost px-7 py-4 rounded-full font-semibold inline-flex items-center gap-3">
+              Clase de prueba
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+          <a href="https://wa.me/5491100000000" target="_blank"
+            class="inline-flex items-center gap-3 text-white/90 hover:text-white transition-colors fade-in"
+            style="animation-delay:.4s">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
             </svg>
-          </a>
-          <a href="#clases" class="btn-ghost px-7 py-4 rounded-full font-semibold inline-flex items-center gap-3">
-            Clase de prueba
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14M13 5l7 7-7 7" />
-            </svg>
+            Contactanos por WhatsApp
           </a>
         </div>
-        <a href="https://wa.me/5491100000000" target="_blank"
-          class="inline-flex items-center gap-3 text-white/90 hover:text-white transition-colors fade-in"
-          style="animation-delay:.4s">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-          </svg>
-          Contactanos por WhatsApp
-        </a>
-      </div>
-      <aside class="belt-panel rounded-[2rem] p-6 hidden lg:block fade-in" style="animation-delay:.45s">
-        <div class="text-xs tracking-[.25em] uppercase text-white/55 mb-5">Código del tatami</div>
-        <div class="space-y-4">
-          <div class="flex items-center justify-between border-b border-white/10 pb-3"><span class="font-serif text-3xl text-crimson">礼</span><span class="text-sm text-white/80">Respeto antes que fuerza</span></div>
-          <div class="flex items-center justify-between border-b border-white/10 pb-3"><span class="font-serif text-3xl text-crimson">技</span><span class="text-sm text-white/80">Técnica con propósito</span></div>
-          <div class="flex items-center justify-between"><span class="font-serif text-3xl text-crimson">心</span><span class="text-sm text-white/80">Carácter bajo presión</span></div>
-        </div>
-      </aside>
+        <aside class="belt-panel rounded-[2rem] p-6 hidden lg:block fade-in" style="animation-delay:.45s">
+          <div class="text-xs tracking-[.25em] uppercase text-white/55 mb-5">Dojo Kun</div>
+          <div class="space-y-3">
+            <div class="border-b border-white/10 pb-2 text-sm text-white/80">Intentar perfeccionar el carácter.</div>
+            <div class="border-b border-white/10 pb-2 text-sm text-white/80">Ser correcto, leal y puntual.</div>
+            <div class="border-b border-white/10 pb-2 text-sm text-white/80">Tratar de superarse.</div>
+            <div class="border-b border-white/10 pb-2 text-sm text-white/80">Respetar a los demás.</div>
+            <div class="text-sm text-white/80">Abstenerse de procederes violentos.</div>
+          </div>
+        </aside>
       </div>
     </div>
 
@@ -598,15 +303,15 @@
         <div class="text-white/60 text-sm mt-1 tracking-wide">Años de trayectoria</div>
       </div>
       <div class="text-center md:text-left">
-        <div class="font-serif text-4xl md:text-5xl text-crimson counter" data-target="200">0</div>
+        <div class="font-serif text-4xl md:text-5xl text-crimson counter" data-target="50" data-suffix="+">0</div>
         <div class="text-white/60 text-sm mt-1 tracking-wide">Medallas ganadas</div>
       </div>
       <div class="text-center md:text-left">
-        <div class="font-serif text-4xl md:text-5xl text-crimson counter" data-target="50">0</div>
+        <div class="font-serif text-4xl md:text-5xl text-crimson counter" data-target="10" data-suffix="+">0</div>
         <div class="text-white/60 text-sm mt-1 tracking-wide">Torneos disputados</div>
       </div>
       <div class="text-center md:text-left">
-        <div class="font-serif text-4xl md:text-5xl text-crimson counter" data-target="30">0</div>
+        <div class="font-serif text-4xl md:text-5xl text-crimson counter" data-target="10" data-suffix="+">0</div>
         <div class="text-white/60 text-sm mt-1 tracking-wide">Campeones formados</div>
       </div>
       <div class="text-center md:text-left">
@@ -614,15 +319,18 @@
         <div class="text-white/60 text-sm mt-1 tracking-wide">Años de trayectoria</div>
       </div>
       <div class="text-center md:text-left">
-        <div class="font-serif text-4xl md:text-5xl text-crimson counter" aria-hidden="true" data-target="200">0</div>
+        <div class="font-serif text-4xl md:text-5xl text-crimson counter" aria-hidden="true" data-target="50"
+          data-suffix="+">0</div>
         <div class="text-white/60 text-sm mt-1 tracking-wide">Medallas ganadas</div>
       </div>
       <div class="text-center md:text-left">
-        <div class="font-serif text-4xl md:text-5xl text-crimson counter" aria-hidden="true" data-target="50">0</div>
+        <div class="font-serif text-4xl md:text-5xl text-crimson counter" aria-hidden="true" data-target="10"
+          data-suffix="+">0</div>
         <div class="text-white/60 text-sm mt-1 tracking-wide">Torneos disputados</div>
       </div>
       <div class="text-center md:text-left">
-        <div class="font-serif text-4xl md:text-5xl text-crimson counter" aria-hidden="true" data-target="30">0</div>
+        <div class="font-serif text-4xl md:text-5xl text-crimson counter" aria-hidden="true" data-target="10"
+          data-suffix="+">0</div>
         <div class="text-white/60 text-sm mt-1 tracking-wide">Campeones formados</div>
       </div>
     </div>
@@ -638,15 +346,17 @@
             Nuestra <span class="accent-line">historia</span>
           </h2>
           <p class="text-ash text-lg leading-relaxed mb-6">
-            Somos un dojo de barrio con más de 15 años de trayectoria. Construimos comunidad, formamos atletas y, sobre todo, cultivamos valores que sirven fuera del tatami: respeto, disciplina y solidaridad.
+            Somos un dojo de barrio en Pinamar Norte. Entrenamos Karate-Do Shotokan con una práctica constante, cercana
+            y orientada al progreso real de cada alumno.
           </p>
           <p class="text-ash text-lg leading-relaxed mb-6">
-            Nuestro estilo es Karate-Do Shotokan, afiliado a <strong class="text-sumi">ISKA</strong> (International
-            Shotokan Karate Association), una de las organizaciones más prestigiosas del mundo.
+            Nuestro estilo es Karate-Do Shotokan y el dojo está afiliado a <strong class="text-sumi">ISKA</strong>
+            (International
+            Shotokan Karate Association).
           </p>
           <p class="text-ash text-lg leading-relaxed mb-8">
-            Dirigido por el Sensei Marcelo Auditore, con amplia experiencia en competencias nacionales e
-            internacionales.
+            Dirigido por el Sensei Marcelo Auditore, cinturón negro 2° Dan, con experiencia acompañando alumnos en su
+            desarrollo técnico, personal y competitivo.
           </p>
 
           <!-- Philosophy -->
@@ -654,37 +364,36 @@
             <div>
               <div class="text-crimson font-serif text-2xl mb-2">道</div>
               <div class="font-semibold text-sm tracking-wide uppercase mb-1">El Camino</div>
-              <p class="text-ash text-sm leading-relaxed">El karate no es solo técnica. Es un camino de crecimiento
-                personal que dura toda la vida.</p>
+              <p class="text-ash text-sm leading-relaxed">El karate exige constancia, atención y paciencia. Cada clase
+                suma una mejora concreta.</p>
             </div>
             <div>
               <div class="text-crimson font-serif text-2xl mb-2">礼</div>
               <div class="font-semibold text-sm tracking-wide uppercase mb-1">Respeto</div>
-              <p class="text-ash text-sm leading-relaxed">Todo comienza y termina con un saludo. El respeto es la base
-                de nuestra práctica.</p>
+              <p class="text-ash text-sm leading-relaxed">El respeto ordena la clase, el vínculo entre compañeros y la
+                forma de entrenar.</p>
             </div>
           </div>
 
-          <a href="#equipo"
+          <!-- <a href="#equipo"
             class="btn-dark px-6 py-3 rounded-full inline-flex items-center gap-3 text-sm font-semibold">
             Conocé más sobre nosotros
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
               stroke-linecap="round" stroke-linejoin="round">
               <path d="M5 12h14M13 5l7 7-7 7" />
             </svg>
-          </a>
+          </a> -->
         </div>
 
         <div class="reveal reveal-delay-2 relative">
-          <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-            <img
-              src="assets/images/image-2.jpeg"
-              alt="Sensei Marcelo Auditore" class="w-full h-[520px] object-cover" />
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl bg-gray-200 h-[520px]">
+            <img src="media/img/clases/clases_001.jpg" alt="Entrenamiento del dojo"
+              class="w-full h-full object-cover" />
           </div>
           <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl max-w-xs hidden md:block">
             <div class="text-crimson font-serif text-xl mb-1">Sensei</div>
             <div class="font-semibold text-lg">Marcelo Auditore</div>
-            <div class="text-ash text-sm mt-1">Cinturón Negro 4° Dan · ISKA</div>
+            <div class="text-ash text-sm mt-1">Cinturón Negro 2° Dan · ISKA</div>
           </div>
           <div
             class="absolute -top-4 -right-4 w-24 h-24 bg-crimson rounded-full flex items-center justify-center text-white font-serif text-4xl shadow-xl hidden md:flex">
@@ -701,9 +410,11 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
       <div class="max-w-3xl mb-10 reveal">
         <div class="section-label mb-4">¿Por qué elegir este dojo?</div>
-        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">Más que técnicas, formamos <span class="accent-line">personas</span></h2>
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">Entrenamiento serio, cercano y <span
+            class="accent-line">constante</span></h2>
         <p class="text-ash text-lg leading-relaxed">
-          Más que aprender técnicas de Karate, en Funakoshi Dojo formamos personas. Nuestro objetivo es transmitir disciplina, respeto, perseverancia y espíritu de superación mediante la práctica del Karate-Do Shotokan.
+          Más que aprender técnicas de Karate, en Funakoshi Dojo formamos personas. Nuestro objetivo es transmitir
+          disciplina, respeto, perseverancia y espíritu de superación mediante la práctica del Karate-Do Shotokan.
         </p>
       </div>
 
@@ -721,7 +432,7 @@
         <div class="benefit-card reveal p-6 rounded-2xl bg-white border border-black/6">
           <div class="benefit-icon mb-4">🏆</div>
           <div class="font-semibold mb-1">Experiencia competitiva</div>
-          <div class="text-ash text-sm">Preparación comprobada en torneos.</div>
+          <div class="text-ash text-sm">Preparación para competir con método y constancia.</div>
         </div>
         <div class="benefit-card reveal p-6 rounded-2xl bg-white border border-black/6">
           <div class="benefit-icon mb-4">🤝</div>
@@ -738,18 +449,22 @@
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div class="reveal">
           <div class="section-label mb-4 text-crimson-50">Nuestro instructor</div>
-          <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">Al frente del dojo: <span class="accent-line">Sensei</span></h2>
-          <p class="text-white/80 text-lg leading-relaxed mb-4">Al frente del dojo se encuentra nuestro instructor principal, responsable de transmitir los valores del Karate-Do Shotokan y acompañar el crecimiento técnico y personal de cada alumno.</p>
+          <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">Al frente del dojo: <span
+              class="accent-line">Sensei</span></h2>
+          <p class="text-white/80 text-lg leading-relaxed mb-4">El Sensei Marcelo Auditore dirige la práctica diaria del
+            dojo, corrige la técnica y acompaña el progreso de cada alumno dentro de una clase grupal y cercana.</p>
           <ul class="list-disc pl-5 text-white/80 space-y-2 mb-6">
             <li>Experiencia como competidor y entrenador.</li>
             <li>Preparación constante y formación continua.</li>
-            <li>Acompañamiento en torneos nacionales e internacionales.</li>
+            <li>Acompañamiento en instancias de competencia.</li>
           </ul>
-          <a href="#contacto" class="btn-primary px-6 py-3 rounded-full inline-flex items-center gap-3">Contactar al Sensei</a>
+          <a href="#contacto" class="btn-primary px-6 py-3 rounded-full inline-flex items-center gap-3">Contactar al
+            Sensei</a>
         </div>
         <div class="reveal relative">
-          <div class="rounded-2xl overflow-hidden shadow-2xl">
-            <img src="assets/images/image-2.jpeg" alt="Instructor" class="w-full h-[420px] object-cover" />
+          <div class="rounded-2xl overflow-hidden shadow-2xl bg-gray-200 h-[420px]">
+            <img src="media/img/clases/clases_006.jpg" alt="Sensei Marcelo Auditore"
+              class="w-full h-full object-cover" />
           </div>
         </div>
       </div>
@@ -761,21 +476,23 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
       <div class="max-w-3xl mb-8 reveal">
         <div class="section-label mb-4">Logros</div>
-        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">Competencias y <span class="accent-line">resultados</span></h2>
-        <p class="text-ash text-lg leading-relaxed">El esfuerzo, la disciplina y la constancia se reflejan en los resultados obtenidos por nuestros alumnos en competencias de distintos niveles.</p>
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">Competencias y <span
+            class="accent-line">resultados</span></h2>
+        <p class="text-ash text-lg leading-relaxed">El trabajo sostenido del dojo también se expresa en la competencia:
+          preparación, participación y aprendizaje en cada torneo.</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-6 mb-8">
         <div class="bg-white p-6 rounded-2xl text-center shadow-sm reveal">
-          <div class="font-serif text-5xl text-crimson">200+</div>
+          <div class="font-serif text-5xl text-crimson">+50</div>
           <div class="text-sm text-ash mt-2 tracking-wide">Medallas ganadas</div>
         </div>
         <div class="bg-white p-6 rounded-2xl text-center shadow-sm reveal">
-          <div class="font-serif text-5xl text-crimson">50+</div>
+          <div class="font-serif text-5xl text-crimson">+10</div>
           <div class="text-sm text-ash mt-2 tracking-wide">Torneos disputados</div>
         </div>
         <div class="bg-white p-6 rounded-2xl text-center shadow-sm reveal">
-          <div class="font-serif text-5xl text-crimson">30+</div>
+          <div class="font-serif text-5xl text-crimson">+10</div>
           <div class="text-sm text-ash mt-2 tracking-wide">Campeones formados</div>
         </div>
       </div>
@@ -783,14 +500,15 @@
       <div class="reveal rounded-2xl overflow-hidden">
         <div class="grid lg:grid-cols-3 gap-4">
           <div class="lg:col-span-2">
-            <img src="assets/images/image-7.jpeg" alt="Trofeos" class="w-full h-[360px] object-cover rounded-2xl" />
+            <img src="media/img/torneos/torneos_001.jpg" alt="Trofeos"
+              class="w-full h-[360px] object-cover rounded-2xl" />
           </div>
           <div class="p-6 bg-white rounded-2xl">
             <h3 class="font-semibold mb-3">Participaciones</h3>
             <ul class="text-ash text-sm space-y-2">
-              <li>Participaciones nacionales e internacionales con delegaciones propias.</li>
-              <li>Podios y distinciones en torneos regionales y nacionales.</li>
-              <li>Programas de preparación para atletas y juveniles.</li>
+              <li>Participaciones en torneos con alumnos del dojo.</li>
+              <li>Podios y distinciones obtenidos por alumnos del dojo.</li>
+              <li>Preparación técnica y física para quienes eligen competir.</li>
             </ul>
           </div>
         </div>
@@ -803,8 +521,9 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
       <div class="max-w-3xl mb-8 reveal">
         <div class="section-label mb-4">Eventos</div>
-        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">Calendario de <span class="accent-line">eventos</span></h2>
-        <p class="text-ash text-lg leading-relaxed">Fechas próximas y actividades pasadas. Mantén esta sección actualizada fácilmente desde el código.</p>
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">Calendario de <span
+            class="accent-line">eventos</span></h2>
+        <p class="text-ash text-lg leading-relaxed">Próximas actividades, exámenes y competencias del dojo.</p>
       </div>
 
       <div id="eventsTimeline" class="space-y-6 reveal">
@@ -818,29 +537,34 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
       <div class="max-w-3xl mb-8 reveal">
         <div class="section-label mb-4 text-crimson-50">FAQ</div>
-        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">Preguntas <span class="accent-line">frecuentes</span></h2>
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">Preguntas <span
+            class="accent-line">frecuentes</span></h2>
       </div>
 
       <div class="grid md:grid-cols-2 gap-6">
         <details class="bg-white/5 p-6 rounded-2xl" open>
           <summary class="font-semibold mb-2">¿Necesito experiencia previa?</summary>
-          <p class="text-white/70 mt-2">No. Recibimos desde principiantes hasta avanzados, con rutas de aprendizaje claras para cada nivel.</p>
+          <p class="text-white/70 mt-2">No. Podés empezar sin experiencia previa. La clase se adapta al nivel y al ritmo
+            de cada practicante.</p>
         </details>
         <details class="bg-white/5 p-6 rounded-2xl">
           <summary class="font-semibold mb-2">¿Qué edad debo tener para comenzar?</summary>
-          <p class="text-white/70 mt-2">Aceptamos alumnos desde los 5 años. Tenemos clases y contenidos adaptados por rangos etarios.</p>
+          <p class="text-white/70 mt-2">Sin edad mínima ni máxima. Aceptamos practicantes de todas las edades.</p>
         </details>
         <details class="bg-white/5 p-6 rounded-2xl">
           <summary class="font-semibold mb-2">¿Qué ropa necesito para entrenar?</summary>
-          <p class="text-white/70 mt-2">Al principio con ropa deportiva cómoda; el keikogi (uniforme) se incorpora según el plan y los exámenes.</p>
+          <p class="text-white/70 mt-2">Para empezar alcanza con ropa deportiva cómoda. El keikogi se incorpora cuando
+            el alumno empieza a sostener la práctica.</p>
         </details>
         <details class="bg-white/5 p-6 rounded-2xl">
           <summary class="font-semibold mb-2">¿El Karate es solamente competición?</summary>
-          <p class="text-white/70 mt-2">No. La competición es una consecuencia del entrenamiento, pero el foco es el crecimiento personal y la disciplina.</p>
+          <p class="text-white/70 mt-2">No. La competencia es una opción para quienes quieren ese camino; la base del
+            dojo es entrenar bien, aprender y sostener la práctica.</p>
         </details>
         <details class="bg-white/5 p-6 rounded-2xl">
           <summary class="font-semibold mb-2">¿Cómo puedo probar una clase?</summary>
-          <p class="text-white/70 mt-2">Reservá una clase de prueba a través del formulario de contacto o por WhatsApp. Es gratuita y sin compromiso.</p>
+          <p class="text-white/70 mt-2">Reservá una clase de prueba gratuita a través del formulario de contacto o por
+            WhatsApp.</p>
         </details>
       </div>
     </div>
@@ -851,17 +575,28 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
       <div class="max-w-3xl mb-8 reveal">
         <div class="section-label mb-4">Alumnos</div>
-        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">Perfiles de <span class="accent-line">alumnos</span></h2>
-        <p class="text-ash text-lg leading-relaxed">Pronto aquí podrás ver los perfiles y logros de nuestros alumnos. Estructura preparada para futuros perfiles.</p>
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">Perfiles de <span
+            class="accent-line">alumnos</span></h2>
+        <p class="text-ash text-lg leading-relaxed">Alumnos de distintas edades comparten el mismo espacio de práctica,
+          cada uno con su proceso, sus objetivos y su manera de crecer dentro del dojo.</p>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Plantilla de perfil -->
-        <div class="bg-white p-6 rounded-2xl shadow-sm reveal">
-          <div class="h-48 overflow-hidden rounded-lg bg-gray-100 mb-4"></div>
-          <div class="font-semibold">Nombre Apellido</div>
-          <div class="text-sm text-ash mb-2">Categoría · Graduación</div>
-          <div class="text-sm text-ash">Participaciones y logros destacados aparecerán aquí.</div>
+        <div
+          class="bg-white p-6 rounded-2xl border border-black/5 shadow-sm hover:shadow-md transition-all reveal flex flex-col justify-between">
+          <div
+            class="h-48 overflow-hidden rounded-xl bg-gradient-to-br from-stone-100 to-stone-200 mb-4 flex items-center justify-center relative border border-dashed border-stone-300">
+            <div class="text-center p-4">
+              <div
+                class="w-12 h-12 rounded-full bg-crimson/10 text-crimson flex items-center justify-center mx-auto mb-2 font-serif text-xl font-bold">
+                武</div>
+              <span class="text-xs uppercase tracking-widest text-ash font-medium">Perfil Próximamente</span>
+            </div>
+          </div>
+          <div class="font-semibold text-lg text-sumi">Nombre Apellido</div>
+          <div class="text-sm text-crimson font-medium mb-2">Categoría · Graduación</div>
+          <div class="text-sm text-ash leading-relaxed">Participaciones y logros destacados aparecerán aquí.</div>
         </div>
       </div>
     </div>
@@ -872,24 +607,57 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
       <div class="max-w-3xl mb-8 reveal">
         <div class="section-label mb-4">Documentación</div>
-        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">Descargas y <span class="accent-line">requisitos</span></h2>
-        <p class="text-ash text-lg leading-relaxed">Aquí estarán disponibles los programas de examen, requisitos de graduación y reglamentos.</p>
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">Descargas y <span
+            class="accent-line">requisitos</span></h2>
+        <p class="text-ash text-lg leading-relaxed">Aquí estarán disponibles los programas de examen, requisitos de
+          graduación y reglamentos.</p>
       </div>
 
       <div class="grid md:grid-cols-2 gap-6">
-        <a class="p-6 rounded-2xl bg-white/5 flex items-center justify-between" href="assets/docs/programa-examen.pdf" download>
-          <div>
-            <div class="font-semibold">Programa de examen</div>
-            <div class="text-ash text-sm">Descargá el temario y requisitos por grado.</div>
+        <a class="p-6 rounded-2xl bg-white border border-black/5 shadow-sm hover:shadow-md hover:border-crimson/30 transition-all flex items-center justify-between group"
+          href="assets/docs/programa-examen.pdf" download>
+          <div class="flex items-center gap-4">
+            <div
+              class="w-12 h-12 rounded-xl bg-crimson/10 text-crimson flex items-center justify-center flex-shrink-0 group-hover:bg-crimson group-hover:text-white transition-all">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+            </div>
+            <div>
+              <div class="font-semibold text-sumi group-hover:text-crimson transition-colors">Programa de examen</div>
+              <div class="text-ash text-sm">Descargá el temario y requisitos por grado.</div>
+            </div>
           </div>
-          <div class="text-crimson font-semibold">PDF</div>
+          <div
+            class="px-3 py-1 rounded-md bg-crimson-50 text-crimson font-semibold text-xs tracking-wider border border-crimson/20">
+            PDF</div>
         </a>
-        <a class="p-6 rounded-2xl bg-white/5 flex items-center justify-between" href="assets/docs/requisitos-graduacion.pdf" download>
-          <div>
-            <div class="font-semibold">Requisitos de graduación</div>
-            <div class="text-ash text-sm">Criterios y materiales necesarios.</div>
+        <a class="p-6 rounded-2xl bg-white border border-black/5 shadow-sm hover:shadow-md hover:border-crimson/30 transition-all flex items-center justify-between group"
+          href="assets/docs/requisitos-graduacion.pdf" download>
+          <div class="flex items-center gap-4">
+            <div
+              class="w-12 h-12 rounded-xl bg-crimson/10 text-crimson flex items-center justify-center flex-shrink-0 group-hover:bg-crimson group-hover:text-white transition-all">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+            </div>
+            <div>
+              <div class="font-semibold text-sumi group-hover:text-crimson transition-colors">Requisitos de graduación
+              </div>
+              <div class="text-ash text-sm">Criterios y materiales necesarios.</div>
+            </div>
           </div>
-          <div class="text-crimson font-semibold">PDF</div>
+          <div
+            class="px-3 py-1 rounded-md bg-crimson-50 text-crimson font-semibold text-xs tracking-wider border border-crimson/20">
+            PDF</div>
         </a>
       </div>
     </div>
@@ -905,7 +673,8 @@
             Mucho más que <span class="italic text-crimson">técnica</span>
           </h2>
           <p class="text-white/70 text-lg leading-relaxed mb-8">
-            El karate transforma el cuerpo, la mente y el espíritu. Valores que llevás contigo toda la vida.
+            El karate entrena el cuerpo, la atención y la conducta. Lo aprendido en clase también se nota fuera del
+            dojo.
           </p>
           <a href="#clases"
             class="inline-flex items-center gap-3 text-crimson-50 hover:text-white transition-colors font-semibold">
@@ -929,7 +698,7 @@
               </svg>
             </div>
             <div class="font-semibold mb-1">Disciplina</div>
-            <div class="text-white/60 text-sm">Constancia y compromiso diario.</div>
+            <div class="text-white/60 text-sm">Hábitos que se construyen clase a clase.</div>
           </div>
           <div
             class="benefit-card reveal reveal-delay-1 p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all cursor-default">
@@ -941,7 +710,7 @@
               </svg>
             </div>
             <div class="font-semibold mb-1">Respeto</div>
-            <div class="text-white/60 text-sm">Base de toda relación humana.</div>
+            <div class="text-white/60 text-sm">Cuidado por el compañero y por la práctica.</div>
           </div>
           <div
             class="benefit-card reveal reveal-delay-2 p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all cursor-default">
@@ -952,7 +721,7 @@
               </svg>
             </div>
             <div class="font-semibold mb-1">Confianza</div>
-            <div class="text-white/60 text-sm">Seguridad en vos y en los demás.</div>
+            <div class="text-white/60 text-sm">Más seguridad para aprender y corregir.</div>
           </div>
           <div
             class="benefit-card reveal p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all cursor-default">
@@ -965,7 +734,7 @@
               </svg>
             </div>
             <div class="font-semibold mb-1">Concentración</div>
-            <div class="text-white/60 text-sm">Enfoque mental agudo.</div>
+            <div class="text-white/60 text-sm">Atención sostenida durante la práctica.</div>
           </div>
           <div
             class="benefit-card reveal reveal-delay-1 p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all cursor-default">
@@ -977,7 +746,7 @@
               </svg>
             </div>
             <div class="font-semibold mb-1">Defensa personal</div>
-            <div class="text-white/60 text-sm">Herramientas reales para la vida.</div>
+            <div class="text-white/60 text-sm">Técnica, criterio y autocontrol.</div>
           </div>
           <div
             class="benefit-card reveal reveal-delay-2 p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all cursor-default">
@@ -988,7 +757,7 @@
               </svg>
             </div>
             <div class="font-semibold mb-1">Estado físico</div>
-            <div class="text-white/60 text-sm">Salud, fuerza y flexibilidad.</div>
+            <div class="text-white/60 text-sm">Movimiento, fuerza y coordinación.</div>
           </div>
           <div
             class="benefit-card reveal p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all cursor-default">
@@ -1000,7 +769,7 @@
               </svg>
             </div>
             <div class="font-semibold mb-1">Control emocional</div>
-            <div class="text-white/60 text-sm">Calma bajo presión.</div>
+            <div class="text-white/60 text-sm">Aprender a responder con más calma.</div>
           </div>
           <div
             class="benefit-card reveal reveal-delay-1 p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all cursor-default">
@@ -1013,7 +782,7 @@
               </svg>
             </div>
             <div class="font-semibold mb-1">Compañerismo</div>
-            <div class="text-white/60 text-sm">Una familia dentro del tatami.</div>
+            <div class="text-white/60 text-sm">Compañeros que entrenan con el mismo objetivo.</div>
           </div>
           <div
             class="benefit-card reveal reveal-delay-2 p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all cursor-default">
@@ -1025,7 +794,7 @@
               </svg>
             </div>
             <div class="font-semibold mb-1">Perseverancia</div>
-            <div class="text-white/60 text-sm">No rendirse nunca.</div>
+            <div class="text-white/60 text-sm">Volver a intentarlo con paciencia.</div>
           </div>
         </div>
       </div>
@@ -1041,60 +810,23 @@
           Para todas las <span class="accent-line">edades</span>
         </h2>
         <p class="text-ash text-lg leading-relaxed">
-          Un solo grupo: todos juntos aprendemos a nuestro ritmo. Desde los 5 años hasta adultos sin experiencia previa.
+          Un solo grupo mixto: todas las edades entrenan juntas los lunes, miércoles y viernes. La práctica se adapta al
+          ritmo de cada alumno con correcciones personalizadas.
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
-        <!-- Card Niños -->
+      <div class="grid gap-6 mb-20">
         <div class="reveal group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-          <div class="h-56 overflow-hidden">
-            <img
-              src="assets/images/image-3.jpeg"
-              alt="Niños" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+          <div class="h-72 overflow-hidden bg-gray-200">
+            <img src="media/img/clases/clases_002.jpg" alt="Clase grupal en el dojo"
+              class="w-full h-full object-cover" />
           </div>
           <div class="p-8">
-            <div class="text-crimson text-xs font-semibold tracking-widest uppercase mb-2">5 a 12 años</div>
-            <h3 class="font-serif text-2xl mb-3">Niños</h3>
-            <p class="text-ash text-sm leading-relaxed mb-4">Aprenden jugando. Desarrollan coordinación, respeto y
-              confianza desde chicos.</p>
-            <div class="text-sm text-sumi font-medium">Lunes y Miércoles · 17:00 hs</div>
-          </div>
-        </div>
-
-        <!-- Card Adolescentes -->
-        <div
-          class="reveal reveal-delay-1 group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-          <div class="h-56 overflow-hidden">
-            <img
-              src="assets/images/image-4.jpeg"
-              alt="Adolescentes"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-          </div>
-          <div class="p-8">
-            <div class="text-crimson text-xs font-semibold tracking-widest uppercase mb-2">13 a 17 años</div>
-            <h3 class="font-serif text-2xl mb-3">Adolescentes</h3>
-            <p class="text-ash text-sm leading-relaxed mb-4">Canalizan energía, fortalecen carácter y construyen
-              disciplina para la vida adulta.</p>
-            <div class="text-sm text-sumi font-medium">Martes y Jueves · 18:30 hs</div>
-          </div>
-        </div>
-
-        <!-- Card Adultos -->
-        <div
-          class="reveal reveal-delay-2 group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
-          <div class="h-56 overflow-hidden">
-            <img
-              src="assets/images/image-5.jpeg"
-              alt="Adultos"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-          </div>
-          <div class="p-8">
-            <div class="text-crimson text-xs font-semibold tracking-widest uppercase mb-2">18+ años</div>
-            <h3 class="font-serif text-2xl mb-3">Adultos</h3>
-            <p class="text-ash text-sm leading-relaxed mb-4">Nunca es tarde para empezar. Entrenamiento integral para
-              cuerpo y mente.</p>
-            <div class="text-sm text-sumi font-medium">Lunes, Miércoles y Viernes · 20:00 hs</div>
+            <div class="text-crimson text-xs font-semibold tracking-widest uppercase mb-2">Grupo mixto</div>
+            <h3 class="font-serif text-2xl mb-3">Todas las edades juntas</h3>
+            <p class="text-ash text-sm leading-relaxed mb-4">Un único horario para todos los practicantes, con
+              ejercicios adaptados a distintas edades y niveles.</p>
+            <div class="text-sm text-sumi font-medium">Lunes, Miércoles y Viernes · 18:00 a 20:00 hs</div>
           </div>
         </div>
       </div>
@@ -1124,7 +856,8 @@
                   stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M20 6L9 17l-5-5" />
                 </svg>
-                <span class="text-white/90">Clases a domicilio en Pinamar y zona</span>
+                <span class="text-white/90">Clases a domicilio en Pinamar y zona <span class="text-white/60 text-sm">(a
+                    coordinar con practicantes con grado de instructor, 2º kyu en adelante)</span></span>
               </li>
               <li class="flex items-start gap-3">
                 <svg class="mt-1 text-crimson flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -1151,9 +884,8 @@
             </a>
           </div>
           <div class="relative min-h-[360px] lg:min-h-full">
-            <img
-              src="assets/images/image-6.jpeg"
-              alt="Clase particular" class="absolute inset-0 w-full h-full object-cover" />
+            <img src="media/img/clases/clases_003.jpg" alt="Clase particular"
+              class="absolute inset-0 w-full h-full object-cover" />
             <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/40 to-transparent lg:bg-gradient-to-l"></div>
           </div>
         </div>
@@ -1168,14 +900,15 @@
         <div class="lg:col-span-5 reveal">
           <div class="section-label mb-4">Competición</div>
           <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
-            De barrio al <span class="accent-line">mundo</span>
+            Competir también es <span class="accent-line">aprender</span>
           </h2>
           <p class="text-ash text-lg leading-relaxed mb-6">
-            De pequeños torneos locales a competencias nacionales e internacionales. Así fue creciendo nuestro dojo,
-            gracias al esfuerzo y compromiso de cada alumno.
+            La competencia forma parte del proceso para quienes eligen ese camino. Cada torneo sirve para medir avances,
+            corregir detalles y ganar experiencia.
+
           </p>
           <p class="text-ash text-lg leading-relaxed mb-8">
-            La competición es una consecuencia natural del entrenamiento constante. No es el objetivo, es el resultado.
+            El objetivo principal sigue siendo entrenar bien: técnica, conducta, constancia y respeto por el compañero.
           </p>
           <a href="#galeria"
             class="btn-dark px-6 py-3 rounded-full inline-flex items-center gap-3 text-sm font-semibold">
@@ -1191,15 +924,15 @@
           <!-- Medallero -->
           <div class="grid grid-cols-3 gap-4 mb-12 reveal">
             <div class="bg-white p-6 rounded-2xl text-center shadow-sm">
-              <div class="font-serif text-5xl text-crimson counter" data-target="200">0</div>
+              <div class="font-serif text-5xl text-crimson counter" data-target="50" data-suffix="+">0</div>
               <div class="text-sm text-ash mt-2 tracking-wide">Medallas</div>
             </div>
             <div class="bg-white p-6 rounded-2xl text-center shadow-sm">
-              <div class="font-serif text-5xl text-crimson counter" data-target="50">0</div>
+              <div class="font-serif text-5xl text-crimson counter" data-target="10" data-suffix="+">0</div>
               <div class="text-sm text-ash mt-2 tracking-wide">Torneos</div>
             </div>
             <div class="bg-white p-6 rounded-2xl text-center shadow-sm">
-              <div class="font-serif text-5xl text-crimson counter" data-target="30">0</div>
+              <div class="font-serif text-5xl text-crimson counter" data-target="10" data-suffix="+">0</div>
               <div class="text-sm text-ash mt-2 tracking-wide">Campeones</div>
             </div>
           </div>
@@ -1207,140 +940,33 @@
           <!-- Timeline -->
           <div class="reveal">
             <h3 class="font-serif text-2xl mb-8">Línea de tiempo</h3>
+            <!-- TODO: verificar fechas y eventos reales con el Sensei -->
             <div class="space-y-6">
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="text-crimson text-xs font-semibold tracking-widest uppercase mb-1">2010</div>
                 <div class="font-semibold text-lg">Fundación del dojo</div>
-                <div class="text-ash text-sm">Nace Funakoshi Dojo en Pinamar Norte con un grupo de 8 alumnos.</div>
+                <div class="text-ash text-sm">Nace Funakoshi Dojo en Pinamar Norte.</div>
               </div>
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                <div class="text-crimson text-xs font-semibold tracking-widest uppercase mb-1">2015</div>
-                <div class="font-semibold text-lg">Afiliación a ISKA</div>
-                <div class="text-ash text-sm">Integración oficial a la International Shotokan Karate Association.</div>
+                <div class="text-crimson text-xs font-semibold tracking-widest uppercase mb-1">A confirmar</div>
+                <div class="font-semibold text-lg">Crecimiento de la escuela</div>
+                <div class="text-ash text-sm">Pendiente de completar con fechas reales, cambios importantes, exámenes o
+                  hitos confirmados por la escuela.</div>
               </div>
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                <div class="text-crimson text-xs font-semibold tracking-widest uppercase mb-1">2019</div>
-                <div class="font-semibold text-lg">Primer campeonato nacional</div>
-                <div class="text-ash text-sm">5 medallas de oro en el Torneo Argentino de Shotokan.</div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="text-crimson text-xs font-semibold tracking-widest uppercase mb-1">2024</div>
-                <div class="font-semibold text-lg">Competencia internacional</div>
-                <div class="text-ash text-sm">Delegación en el Panamericano ISKA. 3 medallas.</div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="text-crimson text-xs font-semibold tracking-widest uppercase mb-1">2026</div>
-                <div class="font-semibold text-lg">Próximo torneo</div>
-                <div class="text-ash text-sm">Torneo Regional de Buenos Aires · Agosto 2026</div>
+                <div class="text-crimson text-xs font-semibold tracking-widest uppercase mb-1">A confirmar</div>
+                <div class="font-semibold text-lg">Competencias y actividades destacadas</div>
+                <div class="text-ash text-sm">Pendiente de completar con torneos, graduaciones, exhibiciones o eventos
+                  reales del dojo.</div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Trofeos image -->
-      <div class="mt-20 reveal rounded-3xl overflow-hidden shadow-2xl">
-        <img
-          src="assets/images/image-7.jpeg"
-          alt="Trofeos" class="w-full h-[400px] object-cover" />
-      </div>
-    </div>
-  </section>
-
-  <!-- EQUIPO -->
-  <section id="equipo" class="py-24 lg:py-32 bg-ink text-white relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 lg:px-10">
-      <div class="max-w-3xl mb-16 reveal">
-        <div class="section-label text-crimson-50 mb-4">Nuestro Equipo</div>
-        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
-          Una gran <span class="italic text-crimson">familia</span>
-        </h2>
-        <p class="text-white/70 text-lg leading-relaxed">
-          Cada integrante tiene su historia. No solo mostramos campeones: mostramos personas que crecen día a día dentro
-          del tatami.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Sensei -->
-        <div class="team-card reveal bg-white/5 rounded-2xl overflow-hidden border border-white/10">
-          <div class="h-72 overflow-hidden">
-            <img
-              src="assets/images/image-8.jpeg"
-              alt="Sensei Marcelo" class="team-img w-full h-full object-cover" />
-          </div>
-          <div class="p-6">
-            <div class="text-crimson text-xs font-semibold tracking-widest uppercase mb-2">Sensei · 4° Dan</div>
-            <h3 class="font-serif text-xl mb-1">Marcelo Auditore</h3>
-            <div class="text-white/50 text-sm mb-4">Director técnico</div>
-            <p class="text-white/70 text-sm italic leading-relaxed">"El karate no se trata de ganar peleas, se trata de
-              no perderlas contra uno mismo."</p>
-          </div>
-        </div>
-
-        <!-- Alumno 1 -->
-        <div class="team-card reveal reveal-delay-1 bg-white/5 rounded-2xl overflow-hidden border border-white/10">
-          <div class="h-72 overflow-hidden bg-gradient-to-br from-crimson/30 to-ink">
-            <img
-              src="assets/images/image-9.jpeg"
-              alt="Tomás" class="team-img w-full h-full object-cover" />
-          </div>
-          <div class="p-6">
-            <div class="text-crimson text-xs font-semibold tracking-widest uppercase mb-2">Cinturón Azul</div>
-            <h3 class="font-serif text-xl mb-1">Tomás R.</h3>
-            <div class="text-white/50 text-sm mb-4">Adolescente · 14 años</div>
-            <p class="text-white/70 text-sm italic leading-relaxed">"Empecé tímido, ahora doy clases a los más chicos.
-              El dojo me cambió la vida."</p>
-          </div>
-        </div>
-
-        <!-- Alumno 2 -->
-        <div class="team-card reveal reveal-delay-2 bg-white/5 rounded-2xl overflow-hidden border border-white/10">
-          <div class="h-72 overflow-hidden bg-gradient-to-br from-crimson/30 to-ink">
-            <img
-              src="assets/images/image-10.jpeg"
-              alt="Lucía" class="team-img w-full h-full object-cover" />
-          </div>
-          <div class="p-6">
-            <div class="text-crimson text-xs font-semibold tracking-widest uppercase mb-2">Cinturón Negro 1° Dan</div>
-            <h3 class="font-serif text-xl mb-1">Lucía M.</h3>
-            <div class="text-white/50 text-sm mb-4">Adulto · 28 años</div>
-            <p class="text-white/70 text-sm italic leading-relaxed">"Llegué sin saber nada. Hoy soy negra y profesora.
-              Este dojo es mi segunda casa."</p>
-          </div>
-        </div>
-
-        <!-- Alumno 3 -->
-        <div class="team-card reveal reveal-delay-3 bg-white/5 rounded-2xl overflow-hidden border border-white/10">
-          <div class="h-72 overflow-hidden bg-gradient-to-br from-crimson/30 to-ink">
-            <img
-              src="assets/images/image-11.jpeg"
-              alt="Benjamín" class="team-img w-full h-full object-cover" />
-          </div>
-          <div class="p-6">
-            <div class="text-crimson text-xs font-semibold tracking-widest uppercase mb-2">Cinturón Amarillo</div>
-            <h3 class="font-serif text-xl mb-1">Benjamín S.</h3>
-            <div class="text-white/50 text-sm mb-4">Niño · 8 años</div>
-            <p class="text-white/70 text-sm italic leading-relaxed">"Me gusta el karate porque hago amigos nuevos y
-              aprendo a ser valiente."</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center mt-14 reveal">
-        <a href="#contacto" class="btn-primary px-8 py-4 rounded-full font-semibold inline-flex items-center gap-3">
-          Conocé al equipo completo
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path d="M5 12h14M13 5l7 7-7 7" />
-          </svg>
-        </a>
-      </div>
     </div>
   </section>
 
@@ -1353,7 +979,7 @@
           Momentos del <span class="accent-line">tatami</span>
         </h2>
         <p class="text-ash text-lg leading-relaxed">
-          Entrenamientos, torneos, graduaciones y exhibiciones. La vida del dojo en imágenes.
+          Entrenamientos, torneos, graduaciones y momentos compartidos por la comunidad del dojo.
         </p>
       </div>
 
@@ -1382,9 +1008,8 @@
       <!-- Grid -->
       <div id="galleryGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
         <div class="gallery-item rounded-2xl h-72 reveal" data-category="entrenamientos">
-          <img
-            src="assets/images/1e9229664-5e9c-4f97-9ab2-ef7b3d130811.png"
-            alt="Entrenamiento" class="w-full h-full object-cover" />
+          <img src="media/img/clases/clases_004.jpg" alt="Entrenamiento en el tatami"
+            class="w-full h-full object-cover" />
           <div class="overlay text-white">
             <div>
               <div class="text-xs tracking-widest uppercase opacity-70">Entrenamiento</div>
@@ -1393,9 +1018,7 @@
           </div>
         </div>
         <div class="gallery-item rounded-2xl h-72 reveal reveal-delay-1" data-category="torneos">
-          <img
-            src="assets/images/1c7d7ff3e-2490-47b3-aa3b-f5a8220233c2.png"
-            alt="Torneo" class="w-full h-full object-cover" />
+          <img src="media/img/torneos/torneos_002.jpg" alt="Torneo del dojo" class="w-full h-full object-cover" />
           <div class="overlay text-white">
             <div>
               <div class="text-xs tracking-widest uppercase opacity-70">Torneo</div>
@@ -1404,9 +1027,7 @@
           </div>
         </div>
         <div class="gallery-item rounded-2xl h-72 reveal reveal-delay-2" data-category="graduaciones">
-          <img
-            src="assets/images/13c0452df-6fba-459d-9a9e-9d2dfc0cbb42.png"
-            alt="Graduación" class="w-full h-full object-cover" />
+          <img src="media/img/examen/examen_001.jpg" alt="Graduación del dojo" class="w-full h-full object-cover" />
           <div class="overlay text-white">
             <div>
               <div class="text-xs tracking-widest uppercase opacity-70">Graduación</div>
@@ -1415,9 +1036,7 @@
           </div>
         </div>
         <div class="gallery-item rounded-2xl h-72 reveal" data-category="exhibiciones">
-          <img
-            src="assets/images/1233ad377-7db2-4964-92a6-9191da2e1c8e.png"
-            alt="Exhibición" class="w-full h-full object-cover" />
+          <img src="media/img/otros/otros_001.jpg" alt="Exhibición del dojo" class="w-full h-full object-cover" />
           <div class="overlay text-white">
             <div>
               <div class="text-xs tracking-widest uppercase opacity-70">Exhibición</div>
@@ -1426,9 +1045,7 @@
           </div>
         </div>
         <div class="gallery-item rounded-2xl h-72 reveal reveal-delay-1" data-category="actividades">
-          <img
-            src="assets/images/1081f3c14-7ee6-4c97-8f86-a85318493b27.png"
-            alt="Actividad" class="w-full h-full object-cover" />
+          <img src="media/img/clases/clases_005.jpg" alt="Actividad del dojo" class="w-full h-full object-cover" />
           <div class="overlay text-white">
             <div>
               <div class="text-xs tracking-widest uppercase opacity-70">Actividad</div>
@@ -1437,9 +1054,7 @@
           </div>
         </div>
         <div class="gallery-item rounded-2xl h-72 reveal reveal-delay-2" data-category="torneos">
-          <img
-            src="assets/images/1a570a6ce-835a-4f19-8069-4063996a56f2.png"
-            alt="Equipo" class="w-full h-full object-cover" />
+          <img src="media/img/torneos/torneos_003.jpg" alt="Equipo del dojo" class="w-full h-full object-cover" />
           <div class="overlay text-white">
             <div>
               <div class="text-xs tracking-widest uppercase opacity-70">Equipo</div>
@@ -1461,7 +1076,8 @@
             Vení a <span class="accent-line">entrenar</span>
           </h2>
           <p class="text-ash text-lg leading-relaxed mb-10">
-            La primera clase es de prueba, sin compromiso. Te esperamos con los brazos abiertos.
+            La primera clase es gratuita y sin compromiso. Podés escribirnos para consultar horarios, clases grupales o
+            clases particulares.
           </p>
 
           <div class="space-y-6">
@@ -1504,7 +1120,7 @@
               </div>
               <div>
                 <div class="font-semibold mb-1">Horarios</div>
-                <div class="text-ash">Lunes a Viernes · 17:00 a 21:30 hs</div>
+                <div class="text-ash">Lunes, Miércoles y Viernes · 18:00 a 20:00 hs</div>
               </div>
             </div>
           </div>
@@ -1513,22 +1129,17 @@
           <div class="mt-10 pt-8 border-t border-black/10">
             <div class="font-semibold mb-4">Seguinos</div>
             <div class="flex gap-3">
-              <a href="#"
-                class="w-11 h-11 rounded-full bg-ink text-white flex items-center justify-center hover:bg-crimson transition-colors">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                </svg>
-              </a>
-              <a href="#"
-                class="w-11 h-11 rounded-full bg-ink text-white flex items-center justify-center hover:bg-crimson transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61560858938541" target="_blank" rel="noopener"
+                class="w-11 h-11 rounded-full bg-ink text-white flex items-center justify-center hover:bg-crimson transition-colors"
+                aria-label="Seguinos en Facebook">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                   <path
                     d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                 </svg>
               </a>
-              <a href="#"
-                class="w-11 h-11 rounded-full bg-ink text-white flex items-center justify-center hover:bg-crimson transition-colors">
+              <a href="https://www.youtube.com/@HonbuDojoISKAPinamar-KarateSho" target="_blank" rel="noopener"
+                class="w-11 h-11 rounded-full bg-ink text-white flex items-center justify-center hover:bg-crimson transition-colors"
+                aria-label="Seguinos en YouTube">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                   <path
                     d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
@@ -1537,68 +1148,87 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Formulario -->
-        <div class="reveal reveal-delay-2">
-          <form id="contactForm" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl">
-            <input type="hidden" name="form-name" value="contacto" />
-            <p class="hidden"><label>No completar: <input name="bot-field" /></label></p>
-            <h3 class="font-serif text-2xl mb-6">Escribinos</h3>
-            <div class="space-y-5">
-              <div>
-                <label class="block text-sm font-medium mb-2">Nombre</label>
-                <input type="text" name="nombre" required
-                  class="form-input w-full px-4 py-3 rounded-xl border border-black/10 bg-paper transition-all"
-                  placeholder="Tu nombre" />
-              </div>
-              <div class="grid grid-cols-2 gap-4">
-                <div>
-                  <label class="block text-sm font-medium mb-2">Email</label>
-                  <input type="email" name="email" required
-                    class="form-input w-full px-4 py-3 rounded-xl border border-black/10 bg-paper transition-all"
-                    placeholder="tu@email.com" />
-                </div>
-                <div>
-                  <label class="block text-sm font-medium mb-2">Teléfono</label>
-                  <input type="tel" name="telefono"
-                    class="form-input w-full px-4 py-3 rounded-xl border border-black/10 bg-paper transition-all"
-                    placeholder="+54 9 11..." />
-                </div>
-              </div>
-              <div>
-                <label class="block text-sm font-medium mb-2">¿Para quién es la clase?</label>
-                <select name="tipo_clase" class="form-input w-full px-4 py-3 rounded-xl border border-black/10 bg-paper transition-all">
-                  <option>Niño (5-12 años)</option>
-                  <option>Adolescente (13-17)</option>
-                  <option>Adulto (18+)</option>
-                  <option>Clase particular</option>
-                </select>
-              </div>
-              <div>
-                <label class="block text-sm font-medium mb-2">Mensaje</label>
-                <textarea name="mensaje" rows="4"
-                  class="form-input w-full px-4 py-3 rounded-xl border border-black/10 bg-paper transition-all resize-none"
-                  placeholder="Contanos un poco sobre vos..."></textarea>
-              </div>
-              <button type="submit"
-                class="btn-primary w-full px-6 py-4 rounded-xl font-semibold inline-flex items-center justify-center gap-3">
-                Enviar mensaje
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
-                </svg>
-              </button>
+      <!-- Formulario -->
+      <div class="reveal reveal-delay-2">
+        <form id="contactForm" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+          class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl">
+          <input type="hidden" name="form-name" value="contacto" />
+          <p class="hidden"><label>No completar: <input name="bot-field" /></label></p>
+          <h3 class="font-serif text-2xl mb-6">Escribinos</h3>
+          <div class="space-y-5">
+            <div>
+              <label class="block text-sm font-medium mb-2">Nombre</label>
+              <input type="text" name="nombre" required
+                class="form-input w-full px-4 py-3 rounded-xl border border-black/10 bg-paper transition-all"
+                placeholder="Tu nombre" />
             </div>
-          </form>
-        </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium mb-2">Email</label>
+                <input type="email" name="email" required
+                  class="form-input w-full px-4 py-3 rounded-xl border border-black/10 bg-paper transition-all"
+                  placeholder="tu@email.com" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-2">Teléfono</label>
+                <input type="tel" name="telefono"
+                  class="form-input w-full px-4 py-3 rounded-xl border border-black/10 bg-paper transition-all"
+                  placeholder="+54 9 11..." />
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">¿Para quién es la clase?</label>
+              <select name="tipo_clase"
+                class="form-input w-full px-4 py-3 rounded-xl border border-black/10 bg-paper transition-all">
+                <option>Consulta para menor</option>
+                <option>Consulta para adolescente</option>
+                <option>Consulta para adulto</option>
+                <option>Clase particular</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Mensaje</label>
+              <textarea name="mensaje" rows="4"
+                class="form-input w-full px-4 py-3 rounded-xl border border-black/10 bg-paper transition-all resize-none"
+                placeholder="Contanos un poco sobre vos..."></textarea>
+            </div>
+            <button type="submit"
+              class="btn-primary w-full px-6 py-4 rounded-xl font-semibold inline-flex items-center justify-center gap-3">
+              Enviar mensaje
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
+    </div>
 
-      <!-- Mapa -->
-      <div class="mt-16 reveal rounded-3xl overflow-hidden shadow-xl h-80 bg-ink/5 relative">
-        <iframe
-          src="https://www.openstreetmap.org/export/embed.html?bbox=-56.86%2C-37.12%2C-56.82%2C-37.09&layer=mapnik&marker=-37.105%2C-56.84"
-          class="w-full h-full border-0 grayscale hover:grayscale-0 transition-all" loading="lazy"></iframe>
+    <!-- Mapa -->
+    <div class="mt-16 reveal rounded-3xl overflow-hidden shadow-xl h-80 bg-ink/5 relative group">
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-55.88%2C-34.78%2C-55.84%2C-34.75&layer=mapnik&marker=-34.76478620796938%2C-55.860825295585684"
+        class="w-full h-full border-0 grayscale hover:grayscale-0 transition-all" loading="lazy"
+        title="Ubicación de Funakoshi Dojo"></iframe>
+      <div class="absolute bottom-4 right-4 flex flex-wrap gap-2 z-10">
+        <a href="https://maps.google.com/?q=-34.76478620796938,-55.860825295585684" target="_blank" rel="noopener"
+          class="bg-white/90 hover:bg-white text-sumi text-xs font-semibold px-3 py-2 rounded-xl shadow-md backdrop-blur-md transition-all inline-flex items-center gap-1.5 border border-black/10">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          Abrir en Google Maps
+        </a>
+        <a href="https://waze.com/ul?ll=-34.76478620796938,-55.860825295585684&navigate=yes" target="_blank" rel="noopener"
+          class="bg-white/90 hover:bg-white text-sumi text-xs font-semibold px-3 py-2 rounded-xl shadow-md backdrop-blur-md transition-all inline-flex items-center gap-1.5 border border-black/10">
+          Abrir en Waze
+        </a>
       </div>
+    </div>
     </div>
   </section>
 
@@ -1610,7 +1240,7 @@
         Tu camino comienza con <span class="italic text-crimson">un paso</span>
       </h2>
       <p class="text-white/70 text-lg max-w-2xl mx-auto mb-10">
-        La primera clase es de prueba. Sin compromiso. Solo vení con ganas de aprender.
+        La primera clase es gratuita y sin compromiso. Vení con ropa cómoda y ganas de aprender.
       </p>
       <div class="flex flex-wrap gap-4 justify-center">
         <a href="#contacto" class="btn-primary px-8 py-4 rounded-full font-semibold inline-flex items-center gap-3">
@@ -1647,7 +1277,8 @@
             </div>
           </div>
           <p class="text-sm leading-relaxed max-w-md">
-            Dojo de barrio en Pinamar Norte. Formamos personas íntegras a través del Karate-Do Shotokan desde 2010.
+            Karate-Do Shotokan en Pinamar Norte. Clases grupales mixtas, clases particulares y una práctica sostenida
+            con respeto y constancia.
           </p>
         </div>
         <div>
@@ -1655,11 +1286,17 @@
           <ul class="space-y-2 text-sm">
             <li><a href="#inicio" class="hover:text-crimson transition-colors">Inicio</a></li>
             <li><a href="#dojo" class="hover:text-crimson transition-colors">El Dojo</a></li>
+            <li><a href="#por-que" class="hover:text-crimson transition-colors">¿Por qué este dojo?</a></li>
             <li><a href="#instructor" class="hover:text-crimson transition-colors">Instructor</a></li>
+            <!-- <li><a href="#equipo" class="hover:text-crimson transition-colors">Nuestro Equipo</a></li> -->
+            <li><a href="#clases" class="hover:text-crimson transition-colors">Clases y Horarios</a></li>
+            <li><a href="#competicion" class="hover:text-crimson transition-colors">Competición</a></li>
             <li><a href="#logros" class="hover:text-crimson transition-colors">Competencias y Logros</a></li>
             <li><a href="#eventos" class="hover:text-crimson transition-colors">Eventos y Calendario</a></li>
-            <li><a href="#alumnos" class="hover:text-crimson transition-colors">Alumnos</a></li>
+            <li><a href="#galeria" class="hover:text-crimson transition-colors">Galería de fotos</a></li>
+            <!-- <li><a href="#alumnos" class="hover:text-crimson transition-colors">Alumnos</a></li> -->
             <li><a href="#documentacion" class="hover:text-crimson transition-colors">Documentación</a></li>
+            <li><a href="#faq" class="hover:text-crimson transition-colors">Preguntas Frecuentes</a></li>
             <li><a href="#contacto" class="hover:text-crimson transition-colors">Contacto</a></li>
           </ul>
         </div>
@@ -1670,7 +1307,7 @@
             <li>Pinamar Norte</li>
             <li><a href="https://wa.me/5491100000000" class="hover:text-crimson transition-colors">+54 9 11
                 0000-0000</a></li>
-            <li>info@funakoshidojo.com</li>
+            <li>info@funakoshidojo.com <!-- TODO: confirmar email real --></li>
           </ul>
         </div>
       </div>
@@ -1678,169 +1315,28 @@
         <div>© 2026 Funakoshi Dojo. Todos los derechos reservados.</div>
         <div class="flex items-center gap-2">
           <span class="text-crimson font-serif text-lg">道</span>
-          <span>Hecho con respeto y disciplina</span>
+          <span>Karate-Do Shotokan en Pinamar Norte</span>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- WhatsApp flotante -->
-  <a href="https://wa.me/5491100000000" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
-    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
-      <path
-        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-    </svg>
-  </a>
+  <!-- WhatsApp flotante con Tooltip -->
+  <div class="fixed bottom-6 right-6 z-60 flex items-center gap-3">
+    <div
+      class="hidden sm:flex items-center bg-white text-ink text-xs font-semibold px-3.5 py-2 rounded-full shadow-lg border border-black/10 transition-all duration-300 animate-pulse">
+      Consultá por tu clase gratis
+    </div>
+    <a href="https://wa.me/5491100000000" target="_blank" class="whatsapp-float relative"
+      aria-label="Contacto por WhatsApp">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+    </a>
+  </div>
 
-  <script>
-    // Nav scroll
-    const nav = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 60) nav.classList.add('nav-scrolled');
-      else nav.classList.remove('nav-scrolled');
-    });
-
-    // Mobile menu
-    const menuBtn = document.getElementById('menuBtn');
-    const closeMenu = document.getElementById('closeMenu');
-    const mobileMenu = document.getElementById('mobileMenu');
-    menuBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
-    closeMenu.addEventListener('click', () => mobileMenu.classList.remove('open'));
-    document.querySelectorAll('.mob-link').forEach(l => l.addEventListener('click', () => mobileMenu.classList.remove('open')));
-
-    // Reveal on scroll
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('in');
-          io.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-    // Counter animation
-    const counterIO = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          const el = e.target;
-          const target = parseInt(el.dataset.target);
-          let cur = 0;
-          const step = Math.max(1, Math.ceil(target / 60));
-          const tick = () => {
-            cur += step;
-            if (cur >= target) { el.textContent = target + (target >= 100 ? '+' : ''); return; }
-            el.textContent = cur;
-            requestAnimationFrame(tick);
-          };
-          tick();
-          counterIO.unobserve(el);
-        }
-      });
-    }, { threshold: 0.5 });
-    document.querySelectorAll('.counter').forEach(el => counterIO.observe(el));
-
-    // Gallery filter
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const galleryItems = document.querySelectorAll('.gallery-item');
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const f = btn.dataset.filter;
-        galleryItems.forEach(item => {
-          if (f === 'all' || item.dataset.category === f) {
-            item.style.display = '';
-            setTimeout(() => { item.style.opacity = '1'; item.style.transform = 'scale(1)'; }, 10);
-          } else {
-            item.style.opacity = '0';
-            item.style.transform = 'scale(0.95)';
-            setTimeout(() => { item.style.display = 'none'; }, 300);
-          }
-        });
-      });
-    });
-
-    // Form submit
-    document.getElementById('contactForm').addEventListener('submit', (e) => {
-      e.preventDefault();
-      const btn = e.target.querySelector('button[type="submit"]');
-      const original = btn.innerHTML;
-      btn.innerHTML = '✓ Mensaje enviado';
-      btn.style.background = '#16a34a';
-      setTimeout(() => {
-        btn.innerHTML = original;
-        btn.style.background = '';
-        e.target.reset();
-      }, 2500);
-    });
-
-    // Active nav link on scroll
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-link');
-    window.addEventListener('scroll', () => {
-      let cur = '';
-      sections.forEach(s => {
-        const top = s.offsetTop - 120;
-        if (window.scrollY >= top) cur = s.id;
-      });
-      navLinks.forEach(l => {
-        l.classList.remove('active');
-        if (l.getAttribute('href') === '#' + cur) l.classList.add('active');
-      });
-    });
-
-    // Eventos: renderizado dinámico de timeline
-    const events = [
-      { date: '2010', title: 'Fundación del dojo', place: 'Pinamar Norte', status: 'realizado' },
-      { date: '2019', title: 'Primer campeonato nacional', place: 'Buenos Aires', status: 'realizado' },
-      { date: '2024', title: 'Panamericano ISKA', place: 'Montevideo', status: 'realizado' },
-      { date: '2026-08-01', title: 'Torneo Regional de Buenos Aires', place: 'Buenos Aires', status: 'próximo' }
-    ];
-
-    function renderEvents() {
-      const container = document.getElementById('eventsTimeline');
-      if (!container) return;
-      container.innerHTML = '';
-      // Orden por fecha aproximada (strings ok para este uso)
-      events.sort((a, b) => (a.date > b.date ? 1 : -1)).forEach(ev => {
-        const item = document.createElement('div');
-        item.className = 'timeline-item bg-white/5 p-6 rounded-2xl';
-        const dot = document.createElement('div');
-        dot.className = 'timeline-dot';
-        const date = document.createElement('div');
-        date.className = 'text-crimson text-xs font-semibold tracking-widest uppercase mb-1';
-        date.textContent = ev.date;
-        const title = document.createElement('div');
-        title.className = 'font-semibold text-lg';
-        title.textContent = ev.title;
-        const place = document.createElement('div');
-        place.className = 'text-ash text-sm';
-        place.textContent = ev.place;
-        const status = document.createElement('div');
-        status.className = 'mt-3 inline-block text-xs font-semibold px-2 py-1 rounded-full';
-        status.textContent = ev.status === 'próximo' ? 'Próximo evento' : 'Realizado';
-        status.style.background = ev.status === 'próximo' ? '#B91C1C' : 'transparent';
-        status.style.color = ev.status === 'próximo' ? '#fff' : '#6B6B6B';
-        item.appendChild(dot);
-        item.appendChild(date);
-        item.appendChild(title);
-        item.appendChild(place);
-        item.appendChild(status);
-        container.appendChild(item);
-      });
-    }
-
-    // Mejora accesibilidad FAQ (toggle con teclado)
-    document.querySelectorAll('details summary').forEach(s => {
-      s.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); s.parentElement.open = !s.parentElement.open; }
-      });
-    });
-
-    // Ejecutar renderizado de eventos al inicio
-    renderEvents();
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
